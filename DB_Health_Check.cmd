@@ -57,6 +57,10 @@ SQLCMD -S "IN-AIR-GPADM1\SQLEXPRESS" -U "sa" -P "Jan@2016" -W -Q "SELECT DB_NAME
 echo ----------------------------------------------------------------------------------- >> C:\Output\DB_Health_Check.txt
 echo =================================================================================== >> C:\Output\DB_Health_Check.txt
 
+cd C:\Weblogic_12c
+
+powershell ./DB_Health_Check.ps1
+
 
 
 
